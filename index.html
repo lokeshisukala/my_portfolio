@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokesh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="noise-overlay"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav__logo">L<span>Dev</span></div>
+    <nav class="nav__links">
+      <a href="#home" class="nav__link active">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#achievements" class="nav__link">Achievements</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle">
+      <i class="bx bx-menu"></i>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="hero__content fade-in-up">
+        <p class="hero__tag">Hello, there 👋</p>
+        <h1 class="hero__title">
+          I'm <span class="accent">Lokesh</span><br />
+          <span class="hero__gradient">Developer & AI‑assisted Builder</span>
+        </h1>
+        <p class="hero__subtitle">
+          B.Tech CSE (2028) • AI Tech Enthusiast
+        </p>
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        </div>
+        <div class="hero__meta">
+          <span><i class="bx bx-code-alt"></i> Frontend & Full‑stack learner</span>
+          <span><i class="bx bx-brain"></i> AI‑powered workflows</span>
+        </div>
+      </div>
+
+      <div class="hero__visual float">
+        <div class="hero__orb hero__orb--lg"></div>
+        <div class="hero__orb hero__orb--sm"></div>
+
+        <div class="glass-card">
+          <p class="glass-card__label">Currently</p>
+          <p class="glass-card__value">2nd Year • 3rd Sem</p>
+          <p class="glass-card__pill">Aspriring AI Engineering</p>
+        </div>
+
+        <div class="glass-card glass-card--alt">
+          <p class="glass-card__label">Tech Stack</p>
+          <p class="glass-card__value">C • Java • Python • JS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--alt">
+      <div class="section__header">
+        <h2>About <span class="accent">Me</span></h2>
+        <p>Who I am and how I like to work.</p>
+      </div>
+      <div class="about__grid slide-in-left">
+        <div class="about__text">
+          <p>
+            I'm a Computer Science undergrad from Hyderabad (B.Tech, class of 2028) who loves
+            combining solid fundamentals with AI tools to build clean, useful applications.
+          </p>
+          <p>
+            I work mostly with frontend, Python and Java, and I use AI assistants to speed up idea
+            exploration, debugging and documentation—while keeping full control over the final code.
+          </p>
+          <p>
+            My current focus: improving communication, deepening DSA, and landing a paid internship by
+            the end of my 2nd year.
+          </p>
+        </div>
+        <div class="about__cards">
+          <div class="stat-card">
+            <span class="stat-card__label">Core Strength</span>
+            <span class="stat-card__value">Frontend + Python</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__label">Learning</span>
+            <span class="stat-card__value">DSA • Backend • AI APIs</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__label">Goal</span>
+            <span class="stat-card__value">Complete My Research on Top MNCs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section__header">
+        <h2>Technical <span class="accent">Skills</span></h2>
+        <p>What I use to build and learn.</p>
+      </div>
+
+      <div class="skills__grid slide-in-right">
+        <div class="skill-group">
+          <h3><i class="bx bx-layout"></i> Frontend</h3>
+          <ul>
+            <li>HTML5, CSS3 (Flexbox, Grid)</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive UI & basic animations</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="bx bx-code-curly"></i> Programming</h3>
+          <ul>
+            <li>C, Data Structures and Algorithms</li>
+            <li>Java </li>
+            <li>Python API</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3><i class="bx bx-bot"></i> AI & Professional</h3>
+          <ul>
+            <li>Python using AI assistants</li>
+            <li>Prompt engineering for coding & learning</li>
+            <li>Basic computer networking concepts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section--alt">
+      <div class="section__header">
+        <h2>Featured <span class="accent">Projects</span></h2>
+        <p>Some things I've built / plan to build.</p>
+      </div>
+
+      <div class="projects__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Full‑stack</button>
+        <button class="filter-btn" data-filter="ai">AI‑powered</button>
+      </div>
+
+      <div class="projects__grid fade-in-up">
+        <article class="project-card" data-category="frontend">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__content">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive, animated portfolio with satin‑blue & piano‑black theme, glassmorphism cards and smooth scroll effects.</p>
+            <div class="project-card__tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ai">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__content">
+            <h3>AI Study Planner</h3>
+            <p>AI‑assisted tool that generates personalised study plans from syllabus and deadlines, built with Python + AI API.</p>
+            <div class="project-card__tags">
+              <span>Python</span><span>AI API</span><span>Web</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="fullstack">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__content">
+            <h3>Task Tracker</h3>
+            <p>Full‑stack task manager with progress tracking, simple analytics and clean UI, built as an internship‑style project.</p>
+            <div class="project-card__tags">
+              <span>JS</span><span>Backend</span><span>DB</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS / HACKSAVVY-25 -->
+    <section id="achievements" class="section section--alt">
+      <div class="section__header">
+        <h2>HackSavvy‑25 <span class="accent">Highlights</span></h2>
+        <p>National‑level 24‑hour hackathon at MGIT, March 26–27, 2025.</p>
+      </div>
+
+      <div class="projects__grid fade-in-up">
+        <!-- Certificates card with image slots -->
+        <article class="project-card">
+          <div class="project-card__content">
+            <h3>Certificates</h3>
+            <p>
+              Received a <strong>Certificate of Organisation</strong> and a
+              <strong>Certificate of Appreciation</strong> for contributions to the
+              24‑hour national‑level HackSavvy‑25 hackathon at Mahatma Gandhi Institute of Technology, Gandipet.
+            </p>
+            <div class="project-card__tags">
+              <span>Organisation</span><span>Appreciation</span><span>National Hackathon</span>
+            </div>
+
+            <div class="achievements__images">
+              <img src="assets/C1.jpg" alt="HackSavvy‑25 Certificate of Organisation" />
+              <img src="assets/C2.jpg" alt="HackSavvy‑25 Certificate of Appreciation" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Sponsors card with people photos -->
+        <article class="project-card">
+          <div class="project-card__content">
+            <h3>Sponsorship & Networking</h3>
+            <p>
+              As part of a 5‑member organising team, helped bring three sponsors to HackSavvy‑25.
+              Personally secured <strong>Real Vision Infra Projects Pvt. Ltd.</strong> as a Gold Sponsor (₹50,000)
+              and <strong>Honest Corporate Services Pvt. Ltd.</strong> as a Silver Sponsor (₹20,000).
+            </p>
+            <p>
+              Worked directly with management and faculty to coordinate sponsor stalls and presence at the event.
+            </p>
+            <div class="project-card__tags">
+              <span>Sponsorship</span><span>Industry Connect</span><span>Teamwork</span>
+            </div>
+
+            <div class="achievements__images">
+              <img src="assets/Sponser1.jpg" alt="With Real Vision Infra team at HackSavvy‑25" />
+              <img src="assets/sponser2.jpg" alt="With Honest Corporate Services MD at HackSavvy‑25" />
+            </div>
+          </div>
+        </article>
+
+        <!-- Logos and website mention -->
+        <article class="project-card">
+          <div class="project-card__content">
+            <h3>Official Partners & Website Feature</h3>
+            <p>
+              The sponsors we brought—Real Vision Infra Projects Pvt. Ltd. and Honest Corporate Services Pvt. Ltd.—
+              were featured in the <strong>“Our Partners”</strong> section of the official HackSavvy‑25 website.
+            </p>
+            <p>
+              This experience improved my confidence in approaching companies, explaining value, and building long‑term relationships.
+            </p>
+            <div class="project-card__tags">
+              <span>Real Vision Infra</span><span>Honest Corporate Services</span><span>MGIT HackSavvy‑25</span>
+            </div>
+
+            <div class="achievements__images">
+              <img src="assets/realvision.jpeg" alt="Real Vision Infra Projects logo" />
+              <img src="assets/Honest.webp" alt="Honest Corporate Services logo" />
+              <img src="assets/hacksavvy websitepage.png" alt="HackSavvy‑25 partners section screenshot" />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section__header">
+        <h2>Let’s <span class="accent">Connect</span></h2>
+        <p>Open to internships, collabs and interesting ideas.</p>
+      </div>
+
+      <div class="contact__grid slide-in-left">
+        <div class="contact__info">
+          <p>
+            Want to discuss an internship, project, or just geek out about AI and dev?
+            Drop a message and I'll get back as soon as I can.
+          </p>
+
+          <div class="contact__links">
+            <a href="mailto:lokeshisukala@gmail.com">
+              <i class="bx bx-envelope"></i> lokeshisukala@gmail.com
+            </a>
+            <a href="tel:+918121489213">
+              <i class="bx bx-phone"></i> +91 81214 89213
+            </a>
+            <a href="https://github.com/yourgithub" target="_blank" rel="noopener">
+              <i class="bx bxl-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">
+              <i class="bx bxl-linkedin-square"></i> LinkedIn
+            </a>
+            <a href="assets/My Resume2.pdf" download>
+              <i class="bx bx-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Web3Forms contact form -->
+        <form
+          class="contact__form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input type="hidden" name="access_key" value="bf596a49-c74b-499a-9fb1-0e33ffb5c84a" />
+          <input type="hidden" name="redirect" value="https://lokeshisukala.github.io/#contact" />
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Send Message</span>
+            <i class="bx bx-send"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+   <footer class="footer">
+    <p>© <span id="year"></span> Lokesh • Built with HTML, CSS & JS</p>
+  </footer>
+
+  <!-- Lightbox (must be BEFORE script) -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox__close" id="lightboxClose">&times;</span>
+    <img src="" alt="" class="lightbox__img" id="lightboxImg" />
+  </div>
+
+  <!-- Load JS ONCE at the very end -->
+  <script src="script.js"></script>
+</body>
+</html>
